@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'LiveActivityDemo' in project 'LiveActivityDemo'
+➜ Explicit dependency on target 'MyWidgetExtension' in project 'LiveActivityDemo'
+Target 'MyWidgetExtension' in project 'LiveActivityDemo' (no dependencies)

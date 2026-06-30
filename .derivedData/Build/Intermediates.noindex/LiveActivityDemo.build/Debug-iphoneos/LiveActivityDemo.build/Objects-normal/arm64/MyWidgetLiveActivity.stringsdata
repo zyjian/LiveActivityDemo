@@ -1,0 +1,40 @@
+{
+  "source": "/Users/zhu/Documents/gate/ios/LiveActivityDemo/MyWidget/MyWidgetLiveActivity.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 119
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld-%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 151
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld-%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 157
+        }
+      }
+    ]
+  },
+  "version": 1
+}

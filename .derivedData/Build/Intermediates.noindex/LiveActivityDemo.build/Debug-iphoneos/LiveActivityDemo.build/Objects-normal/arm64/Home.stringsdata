@@ -1,0 +1,48 @@
+{
+  "source": "/Users/zhu/Documents/gate/ios/LiveActivityDemo/LiveActivityDemo/Home.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "实时活动预览（锁屏样式近似）",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "开启实时活动",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "模拟进球（客队 +1，含提醒）",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "刷新比分（静默更新）",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "结束实时活动",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 68
+        }
+      }
+    ]
+  },
+  "version": 1
+}

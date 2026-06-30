@@ -1,0 +1,24 @@
+{
+  "source": "/Users/zhu/Documents/gate/ios/LiveActivityDemo/LiveActivityDemo/ViewUtils.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "App",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 151
+        }
+      }
+    ]
+  },
+  "version": 1
+}

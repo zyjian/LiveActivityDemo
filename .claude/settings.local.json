@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(file *)",
+      "Bash(./push.sh 8085395807006bd97d505bf7294ae3a91c488abac334ac84474cf268b1152aac0c79e07c6dd502ec8be185c87d7160649a4c04d241e77e2c129d438a6ca42acd4167fdc6d9196cf17ed6a6822ef33f31 start 0 0 \"0'\")",
+      "Bash(./push.sh e2d0ca4cec3cb037084e1cf30f8310ecbea23c795ac86498109614feba0ecb81 *)",
+      "Bash(./push.sh 803c33ab690b39f9d7c74a881f0730a9327ee8714cf6af35393a0326157bda3c1b881e74a9b434a8e1deb75bc025436da0566e55b6e35658b81d5a2ac1059f05ca1661f611a9f8e557ce4cc12db7008b *)",
+      "Bash(./push.sh 80ed25b75ce5cfac9bb41b11e0e256cc0cf697d466498ef603c199c99349f30f9c9a1c7dbac2b644ba0f9adc8dfcd2c04c1b0a5ecc80322feab40de440ab5077146c319655b52f2d6d0d216b897bc97a update 0 0 \"2'\")",
+      "Bash(./push.sh 809f743d3700cab7a07cbfcdfe3e537b59c365b9ce16b1785a87864a7d8473e65e6394b19a420b922cba403f0b692d6fea2a65ab32ff5558a4e2c15727e21f960ce2b7bf8d4da900fb81f3f7f0d493df update 2 1 \"67'\")",
+      "Bash(xcodebuild -project LiveActivityDemo.xcodeproj -scheme LiveActivityDemo -configuration Debug -destination 'generic/platform=iOS Simulator' build)",
+      "Bash(chmod +x *)",
+      "Bash(python3 -c \"import ast; [ast.parse\\(open\\(f\\).read\\(\\)\\) for f in ['main.py','apns.py','store.py']]; print\\('syntax ok'\\)\")",
+      "Bash(./run.sh)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://127.0.0.1:8000/api/state)",
+      "Bash(curl -s -o /dev/null -w \"pypi: %{http_code} \\(%{time_total}s\\)\\\\n\" --max-time 5 https://pypi.org/simple/fastapi/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" --max-time 5 https://www.apple.com)",
+      "Read(//etc/**)",
+      "Bash(python3 -c \"import urllib.request; print\\(urllib.request.getproxies\\(\\)\\)\")",
+      "Bash(curl -fs http://127.0.0.1:8000/api/state)",
+      "Bash(curl -s http://127.0.0.1:8000/api/state)",
+      "Bash(python3 -m json.tool)",
+      "Bash(ipconfig getifaddr *)",
+      "Bash(./push.sh 808173bfda95327b7a7ed6a07b9de97de91f85fcee5384eb66503e19ae64b316e58e48dd0a0bcdaabb4526be9003c02e4408131041c01a95a2892de6da6cbf7f6adc55c3a5b81dd81c7c9bc344f111eb start 0 0 \"0'\")",
+      "Bash(/Users/zhu/Documents/gate/ios/LiveActivityDemo/demo-tools/server/run.sh *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:8000/)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://127.0.0.1:8000/)",
+      "Bash(./push.sh 8f6f2fed8d03255ef6bd4dadf597ba4e45d06a5828f38bc427a311d45e373dfd start 0 0 \"0'\")",
+      "Bash(./push.sh 80e46ea6c0280e12d6ab667f4f59c5d239849bba91d545e7634667ed41584a5a8aced71bc578284dd0a47bd9b24d7f8539d19c6d5704555bbcb47c7bfd856796923611b81a54b3de078f68165df1e4c1 start 0 0 \"0'\")",
+      "Bash(xcodebuild -scheme LiveActivityDemo -destination 'generic/platform=iOS' -configuration Debug build)",
+      "Bash(idevicesyslog -p \"LiveActivityDemo\")",
+      "Bash(echo \"syslog pid: $!\")",
+      "Bash(idevice_id -l)",
+      "Bash(xcrun devicectl *)",
+      "Bash(xargs cat *)",
+      "Bash(/usr/libexec/PlistBuddy -c \"Print\" /Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Products/Debug-iphoneos/LiveActivityDemo.app/Info.plist)"
+    ]
+  }
+}

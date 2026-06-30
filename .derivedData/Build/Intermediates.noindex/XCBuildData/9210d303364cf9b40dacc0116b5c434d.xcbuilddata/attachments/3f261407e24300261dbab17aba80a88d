@@ -1,0 +1,69 @@
+{
+  "" : {
+    "diagnostics" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetExtension-primary.dia",
+    "emit-module-dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetExtension-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetExtension-primary-emit-module.dia",
+    "pch" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetExtension-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetExtension-primary.swiftdeps"
+  },
+  "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/DerivedSources/IntentDefinitionGenerated/MyWidget/ConfigurationIntent.swift" : {
+    "const-values" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ConfigurationIntent.swiftconstvalues",
+    "dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ConfigurationIntent.d",
+    "diagnostics" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ConfigurationIntent.dia",
+    "index-unit-output-path" : "/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ConfigurationIntent.o",
+    "llvm-bc" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ConfigurationIntent.bc",
+    "object" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ConfigurationIntent.o",
+    "swift-dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ConfigurationIntent.swiftdeps",
+    "swiftmodule" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ConfigurationIntent~partial.swiftmodule"
+  },
+  "/Users/zhu/Documents/gate/ios/LiveActivityDemo/LiveActivityDemo/ViewUtils.swift" : {
+    "const-values" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ViewUtils.swiftconstvalues",
+    "dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ViewUtils.d",
+    "diagnostics" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ViewUtils.dia",
+    "index-unit-output-path" : "/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ViewUtils.o",
+    "llvm-bc" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ViewUtils.bc",
+    "object" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ViewUtils.o",
+    "swift-dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ViewUtils.swiftdeps",
+    "swiftmodule" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/ViewUtils~partial.swiftmodule"
+  },
+  "/Users/zhu/Documents/gate/ios/LiveActivityDemo/MyWidget/MyWidget.swift" : {
+    "const-values" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidget-bf0426ff08f468a5a9a7cbf2d29aa448.swiftconstvalues",
+    "dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidget-bf0426ff08f468a5a9a7cbf2d29aa448.d",
+    "diagnostics" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidget-bf0426ff08f468a5a9a7cbf2d29aa448.dia",
+    "index-unit-output-path" : "/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidget-bf0426ff08f468a5a9a7cbf2d29aa448.o",
+    "llvm-bc" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidget-bf0426ff08f468a5a9a7cbf2d29aa448.bc",
+    "object" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidget-bf0426ff08f468a5a9a7cbf2d29aa448.o",
+    "swift-dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidget-bf0426ff08f468a5a9a7cbf2d29aa448.swiftdeps",
+    "swiftmodule" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidget-bf0426ff08f468a5a9a7cbf2d29aa448~partial.swiftmodule"
+  },
+  "/Users/zhu/Documents/gate/ios/LiveActivityDemo/MyWidget/MyWidgetBundle.swift" : {
+    "const-values" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetBundle.swiftconstvalues",
+    "dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetBundle.d",
+    "diagnostics" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetBundle.dia",
+    "index-unit-output-path" : "/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetBundle.o",
+    "llvm-bc" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetBundle.bc",
+    "object" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetBundle.o",
+    "swift-dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetBundle.swiftdeps",
+    "swiftmodule" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetBundle~partial.swiftmodule"
+  },
+  "/Users/zhu/Documents/gate/ios/LiveActivityDemo/MyWidget/MyWidgetLiveActivity.swift" : {
+    "const-values" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetLiveActivity.swiftconstvalues",
+    "dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetLiveActivity.d",
+    "diagnostics" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetLiveActivity.dia",
+    "index-unit-output-path" : "/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetLiveActivity.o",
+    "llvm-bc" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetLiveActivity.bc",
+    "object" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetLiveActivity.o",
+    "swift-dependencies" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetLiveActivity.swiftdeps",
+    "swiftmodule" : "/Users/zhu/Documents/gate/ios/LiveActivityDemo/.derivedData/Build/Intermediates.noindex/LiveActivityDemo.build/Debug-iphoneos/MyWidgetExtension.build/Objects-normal/arm64/MyWidgetLiveActivity~partial.swiftmodule"
+  }
+}

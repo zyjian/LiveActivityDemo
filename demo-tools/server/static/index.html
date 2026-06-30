@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>LiveActivityDemo Backend</title>
+<style>
+  :root { color-scheme: light dark; --gap: 12px; }
+  * { box-sizing: border-box; }
+  body { font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; max-width: 1080px; margin-inline: auto; }
+  h1 { font-size: 18px; margin: 0 0 12px; }
+  h2 { font-size: 13px; margin: 20px 0 8px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); }
+  .card { border: 1px solid #8884; border-radius: 10px; padding: 12px; background: #8881; }
+  .card .label { font-size: 12px; color: #888; margin-bottom: 4px; }
+  .card .val { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; word-break: break-all; }
+  .card .meta { font-size: 11px; color: #888; margin-top: 6px; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  button { font: inherit; padding: 6px 12px; border-radius: 6px; border: 1px solid #8884; background: #fff1; cursor: pointer; }
+  button.primary { background: #007aff; color: white; border-color: transparent; }
+  button.danger  { background: #ff3b30; color: white; border-color: transparent; }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+  input[type="number"], input[type="text"] { width: 70px; font: inherit; padding: 4px 6px; border-radius: 6px; border: 1px solid #8884; background: transparent; color: inherit; }
+  input[type="text"] { width: 80px; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th, td { text-align: left; padding: 4px 8px; border-bottom: 1px solid #8882; vertical-align: top; }
+  td.kind { white-space: nowrap; color: #007aff; font-family: ui-monospace, monospace; }
+  td.detail { font-family: ui-monospace, monospace; color: #888; word-break: break-all; }
+  .status-ok { color: #34c759; }
+  .status-bad { color: #ff3b30; }
+  .config { font-size: 11px; color: #888; font-family: ui-monospace, monospace; }
+</style>
+</head>
+<body>
+<h1>LiveActivityDemo Backend</h1>
+<div class="config" id="config"></div>
+
+<h2>Tokens</h2>
+<div class="grid">
+  <div class="card">
+    <div class="label">device_token (silent)</div>
+    <div class="val" id="t-device">—</div>
+  </div>
+  <div class="card">
+    <div class="label">push_to_start_token</div>
+    <div class="val" id="t-p2s">—</div>
+  </div>
+  <div class="card">
+    <div class="label">activity_token</div>
+    <div class="val" id="t-activity">—</div>
+    <div class="meta" id="t-activity-meta"></div>
+  </div>
+</div>
+
+<h2>Debug Push</h2>
+<div class="row" style="margin-bottom: 8px;">
+  <span>home <input type="number" id="home" value="0" /></span>
+  <span>away <input type="number" id="away" value="0" /></span>
+  <span>minute <input type="text" id="minute" value="0'" /></span>
+  <label><input type="checkbox" id="alert" /> alert</label>
+</div>
+<div class="row">
+  <button class="primary" onclick="call('/api/push/start', payload())">start</button>
+  <button onclick="call('/api/push/update', payload(true))">update</button>
+  <button onclick="call('/api/push/silent')">silent</button>
+  <button class="danger" onclick="call('/api/push/end', payload())">end</button>
+  <button onclick="refresh()" style="margin-left:auto;">refresh</button>
+</div>
+
+<h2>Events</h2>
+<table>
+  <thead><tr><th>time</th><th>kind</th><th>detail</th></tr></thead>
+  <tbody id="events"></tbody>
+</table>
+
+<script>
+const $ = (id) => document.getElementById(id);
+
+function fmtTime(ts) {
+  const d = new Date(ts * 1000);
+  return d.toLocaleTimeString();
+}
+async function copyText(t) { try { await navigator.clipboard.writeText(t); } catch {} }
+function setToken(id, value) {
+  const el = $(id);
+  el.innerHTML = "";
+  if (!value) { el.textContent = "—"; return; }
+  const span = document.createElement("span");
+  span.textContent = value;
+  const btn = document.createElement("button");
+  btn.textContent = "copy";
+  btn.style.cssText = "margin-left:6px;font-size:11px;padding:0 6px;";
+  btn.onclick = () => copyText(value);
+  el.appendChild(span);
+  el.appendChild(btn);
+}
+function payload(withScore) {
+  const b = {
+    home: parseInt($("home").value || "0", 10),
+    away: parseInt($("away").value || "0", 10),
+    minute: $("minute").value || "0'",
+  };
+  if (withScore) b.alert = $("alert").checked;
+  return b;
+}
+async function call(path, payload) {
+  try {
+    const r = await fetch(path, {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: payload ? JSON.stringify(payload) : "{}",
+    });
+    const j = await r.json().catch(() => ({}));
+    console.log(path, r.status, j);
+  } catch (e) { console.error(e); }
+  refresh();
+}
+async function refresh() {
+  const r = await fetch("/api/state");
+  const { config, state } = await r.json();
+
+  $("config").textContent =
+    `team=${config.team_id}  key=${config.key_id}  bundle=${config.bundle_id}  ` +
+    `host=${config.apns_host}  p8=${config.auth_key_exists ? "ok" : "MISSING"}`;
+
+  setToken("t-device", state.device_token);
+  setToken("t-p2s", state.push_to_start_token);
+  setToken("t-activity", state.activity_token);
+  $("t-activity-meta").textContent = state.activity_id
+    ? `id=${state.activity_id}  match=${state.match_id || "—"}`
+    : "";
+
+  const tbody = $("events");
+  tbody.innerHTML = (state.events || []).map(e => {
+    const d = e.detail || {};
+    let cls = "";
+    if (typeof d.status === "number") {
+      cls = (d.status >= 200 && d.status < 300) ? "status-ok" : "status-bad";
+    }
+    return `<tr>
+      <td>${fmtTime(e.ts)}</td>
+      <td class="kind">${e.kind}</td>
+      <td class="detail ${cls}">${escapeHtml(JSON.stringify(d))}</td>
+    </tr>`;
+  }).join("");
+}
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+}
+refresh();
+setInterval(refresh, 3000);
+</script>
+</body>
+</html>

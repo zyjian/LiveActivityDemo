@@ -1,0 +1,24 @@
+{
+  "source": "/Users/zhu/Documents/gate/ios/LiveActivityDemo/LiveActivityDemo/LiveActivityUtils.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "比分更新",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 93
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld - %lld · %@",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 94
+        }
+      }
+    ]
+  },
+  "version": 1
+}

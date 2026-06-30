@@ -1,0 +1,24 @@
+{
+  "source": "/Users/zhu/Documents/gate/ios/LiveActivityDemo/MyWidget/MyWidget.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "My Widget",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "This is an example widget.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 59
+        }
+      }
+    ]
+  },
+  "version": 1
+}
