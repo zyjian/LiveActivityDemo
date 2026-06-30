@@ -1,6 +1,6 @@
 # iOS 实时活动（Live Activity）开发指南
 
-> 基于 [LiveActivityDemo](https://github.com/aklee/LiveActivityDemo) 实战项目整理。目标：让第一次接触 Live Activity 的开发者，在半天内跑通「本地创建 → 远程推送更新 → 结束」的完整链路，并避开最常见的联调坑。
+> 基于 [LiveActivityDemo](https://github.com/zyjian/LiveActivityDemo) 实战项目整理。目标：让第一次接触 Live Activity 的开发者，在半天内跑通「本地创建 → 远程推送更新 → 结束」的完整链路，并避开最常见的联调坑。
 
 ---
 
@@ -652,9 +652,9 @@ idevicesyslog | grep -E "LiveActivityDemo|MyWidgetExtension"
 
 ### 本项目
 
-- 源码：[LiveActivityDemo](https://github.com/aklee/LiveActivityDemo)
-- 调试工具说明：[demo-tools/README.md](../demo-tools/README.md)
-- 项目内 README：[README.md](../README.md)
+- 源码：[LiveActivityDemo](https://github.com/zyjian/LiveActivityDemo)
+- 调试工具说明：[demo-tools/README.md](https://github.com/zyjian/LiveActivityDemo/blob/main/demo-tools/README.md)
+- 项目内 README：[README.md](https://github.com/zyjian/LiveActivityDemo/blob/main/README.md)
 
 ---
 
